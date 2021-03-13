@@ -13,6 +13,12 @@ namespace Task_5
             string tenText = null;
             string digitsText = null;
 
+            if (number < 10 || number > 99)
+            {
+                Console.WriteLine("Not a two-digit number");
+                return;
+            }
+
             if (number >= 10 && number <= 19)
             {
                 switch(number)
